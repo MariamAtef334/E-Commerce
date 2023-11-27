@@ -1,0 +1,80 @@
+.hero {
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(180deg, #fde1ff, #e1ffea22 60%);
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1;
+    gap: 20px;
+    padding: 0 20px; /* Adjust left padding for responsiveness */
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 40px; /* Adjust font size for responsiveness */
+    font-weight: 700;
+}
+
+.hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hand-icon img {
+    width: 60px; /* Adjust image size for responsiveness */
+}
+
+.hero-latest-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 250px; /* Adjust button width for responsiveness */
+    height: 50px; /* Adjust button height for responsiveness */
+    border-radius: 25px; /* Adjust border radius for responsiveness */
+    margin-top: 20px; /* Adjust margin for responsiveness */
+    color: white;
+    background: #ff4141;
+    font-size: 18px; /* Adjust font size for responsiveness */
+    font-weight: 500;
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-right img {
+    max-width: 100%; /* Ensure the image is responsive */
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* Media Query for Small Screens (e.g., smartphones) */
+@media (max-width: 768px) {
+    .hero-left p {
+        font-size: 32px;
+    }
+    
+    .hero-latest-btn {
+        width: 200px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
